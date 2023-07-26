@@ -1,8 +1,8 @@
 import React from 'react';
 import Logo from "./img/CYF-logo2.png";
-import "./Home.css";
+import "./main.css";
 
-const Home = () => {
+const Main = () => {
   return (
     <div>
       <div className="navbar">
@@ -33,4 +33,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Main;
