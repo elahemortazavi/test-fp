@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "./img/CYF-logo2.png";
+import Logo from "./img/cyfLogo1.png";
 import "./calendar.css";
 
 const Calendar = () => {
@@ -14,15 +14,14 @@ const Calendar = () => {
         </ul>
         <img className="logo-img" src={Logo} alt="logo" />
       </div>
-
+      <h1>CYF Classroom Plan</h1>
       <div className="main">
         <div className="left">
-          <h1>CYF Classroom Plan</h1>
           <div className="leftContent">
-            <div className="leftItem">Item 1</div>
-            <div className="leftItem">Item 2</div>
-            <div className="leftItem">Item 3</div>
-            <div className="leftItem">Item 4</div>
+            <div className="leftItem" id="week">Week 20</div>
+            <div className="leftItem">React</div>
+            <div className="leftItem">Saturday 23 July 2023</div>
+            <div className="leftItem">10:00 - 17:00</div>
           </div>
         </div>
         <div className="right">
