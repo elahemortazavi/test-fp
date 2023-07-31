@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from "./img/CYF-logo2.png";
+import { Link } from "react-router-dom";
 import "./main.css";
 
 const Main = () => {
@@ -7,7 +8,16 @@ const Main = () => {
     <div>
       <div className="navbar">
         <ul className="navList">
-          <li className="navListItem">CYF CALENDAR</li>
+          <li className="navListItem">
+            <Link className="link" to="/">
+              MAIN
+            </Link>
+          </li>
+          <li className="navListItem">
+            <Link className="link" to="/calendar">
+              CYF CALENDAR
+            </Link>
+          </li>
           <li className="navListItem">ATTENDANCE</li>
           <li className="navListItem">TRAVEL CHECK</li>
           <li className="navListItem">ABOUT US</li>
@@ -25,7 +35,7 @@ const Main = () => {
               <i className="topIcon fab fa-pinterest-square"></i>
               <i className="topIcon fab fa-twitter-square"></i>
             </div>
-            <img className='logo-img' src={Logo} alt='logo' />
+            <img className="logo-img" src={Logo} alt="logo" />
           </div>
         </div>
       </div>

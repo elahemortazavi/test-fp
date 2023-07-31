@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "./img/cyfLogo1.png";
+import { Link } from "react-router-dom";
 import "./calendar.css";
 
 const Calendar = () => {
@@ -7,7 +8,16 @@ const Calendar = () => {
     <div>
       <div className="navbar">
         <ul className="navList">
-          <li className="navListItem">CYF CALENDAR</li>
+          <li className="navListItem">
+            <Link className="link" to="/">
+              MAIN
+            </Link>
+          </li>
+          <li className="navListItem">
+            <Link className="link" to="/calendar">
+             CYF CALENDAR
+            </Link>
+          </li>
           <li className="navListItem">ATTENDANCE</li>
           <li className="navListItem">TRAVEL CHECK</li>
           <li className="navListItem">ABOUT US</li>
@@ -18,7 +28,9 @@ const Calendar = () => {
       <div className="main">
         <div className="left">
           <div className="leftContent">
-            <div className="leftItem" id="week">Week 20</div>
+            <div className="leftItem" id="week">
+              Week 20
+            </div>
             <div className="leftItem">React</div>
             <div className="leftItem">Saturday 23 July 2023</div>
             <div className="leftItem">10:00 - 17:00</div>

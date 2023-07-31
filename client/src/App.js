@@ -1,16 +1,22 @@
 
 import './App.css';
 import Calendar from './pages/Calendar';
-// import Main from './pages/Main';
+import Main from './pages/Main';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
     
-      {/* <Main/> */}
-      <Calendar />
+    <BrowserRouter> 
+       <Routes>
       
-    </div>
+         <Route path='/'  element={ <Main />} />
+         <Route path='/calendar'  element={ <Calendar />} />
+
+       </Routes>
+      </BrowserRouter> 
+      
+    
   );
 }
 
