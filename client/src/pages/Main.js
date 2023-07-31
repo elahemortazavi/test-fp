@@ -20,7 +20,7 @@ const Main = () => {
           </li>
           <li className="navListItem">ATTENDANCE</li>
           <li className="navListItem">TRAVEL CHECK</li>
-          <li className="navListItem">ABOUT US</li>
+          
         </ul>
 
         <div className="container">

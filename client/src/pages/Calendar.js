@@ -15,12 +15,19 @@ const Calendar = () => {
           </li>
           <li className="navListItem">
             <Link className="link" to="/calendar">
-             CYF CALENDAR
+              CYF CALENDAR
             </Link>
           </li>
-          <li className="navListItem">ATTENDANCE</li>
-          <li className="navListItem">TRAVEL CHECK</li>
-          <li className="navListItem">ABOUT US</li>
+          <li className="navListItem">
+            <Link className="link" to="/attendance">
+              ATTENDANCE
+            </Link>
+          </li>
+          <li className="navListItem">
+            <Link className="link" to="/travel">
+              TRAVEL CHECK
+            </Link>
+          </li>
         </ul>
         <img className="logo-img" src={Logo} alt="logo" />
       </div>
