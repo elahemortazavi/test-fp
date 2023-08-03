@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./login.css";
 
 function Login() {
@@ -32,7 +33,7 @@ function Login() {
           sapiente debitis adipisci sed temporibus, quaerat facilis, architecto
           quisquam.
         </p>
-        <button className="loginButton">Login With GitHub</button>
+        <button className="loginButton"><Link className="link" to="/form">Login</Link></button>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 
 import './App.css';
 import Calendar from './pages/Calendar';
+import Form from "./pages/Form"
 import Main from './pages/Main';
 import Login from "./pages/Login";
 import Attendance from "./pages/Attendance";
@@ -9,15 +10,14 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/main" element={<Main />} />
-        <Route path="/calendar" element={<Calendar />} />
-        <Route path="/attendance" element={<Attendance />} />
-        <Route path="/travel" element={<TravelCheck />} />
-      </Routes>
-    
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/form" element={<Form />} />
+      <Route path="/main" element={<Main />} />
+      <Route path="/calendar" element={<Calendar />} />
+      <Route path="/attendance" element={<Attendance />} />
+      <Route path="/travel" element={<TravelCheck />} />
+    </Routes>
   );
 }
 
