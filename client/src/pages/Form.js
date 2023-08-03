@@ -1,14 +1,12 @@
 import React from "react";
 import "./form.css";
+import Logo1 from "./img/cyfLogo1.png"
 
 function Form() {
   return (
     <div className="login">
       <span className="loginTitle">
-        <img
-          src="https://codeyourfuture.io/wp-content/uploads/2019/03/cyf_brand.png"
-          width={200}
-        />
+        <img className="logo1" src={Logo1} alt="logo" />
       </span>
 
       <form className="loginForm">
