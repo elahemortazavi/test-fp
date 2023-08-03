@@ -1,0 +1,141 @@
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+}
+
+.navList {
+    display: flex;
+    justify-content: space-evenly;
+    /* margin: 0; */
+    margin-top: 40px;
+    padding: 0;
+    list-style: none;
+    margin-left: 40px;
+
+}
+
+.navListItem {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 20px;
+
+}
+
+.navListItem:hover {
+    color: brown;
+
+}
+
+.logo-img {
+    max-width: 100px;
+    margin-right: 40px;
+    margin-top: 30px;
+    /* width: 150px;
+  height: 150px; */
+}
+.bottom-container {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+.custom-table {
+    width: 300px;
+    height: 300px;
+    padding:10px;
+    gap:10px;
+
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-color: rgba(180, 175, 175, 0.483);
+    border-radius: 20px;
+    border: 1px solid rgb(244, 10, 10);
+    margin: 10px;
+    
+}
+.middle-container {
+
+    display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex: 1;
+}
+
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: rgb(232, 50, 10);
+
+}
+/* Style for the input */
+input {
+    width: 200px;
+    text-align: center;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: bolder;
+    border: 1px solid rgb(225, 50, 11);
+    border-radius: 5px;
+    outline: none;
+    border-color: #f42409;
+    box-shadow: 0 0 5px rgba(255, 13, 0, 0.931);
+    
+}
+td {
+    padding: 8px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+th {
+color: brown;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    
+}
+th.border-right {
+    border-right: 1px solid #ccc;
+    border-bottom: #f42409;
+}
+.select-container {
+display: flex;
+flex-direction: column-reverse;
+align-items: center;
+justify-content: center;
+text-align: center;
+margin-top: 20px;
+margin-bottom: 20px;
+border: rgb(232, 50, 10);
+width: 200px; 
+height: 45px;
+padding: 5px 10px;
+font-size: 18px;
+font-weight: 600;
+border: 1px solid rgb(225, 50, 11);
+border-radius: 5px;
+outline: none;
+border-color: #f42409;
+box-shadow: 0 0 5px rgba(255, 13, 0, 0.931);
+    
+}
+
+.select-container option {
+    text-align: justify;
+}
