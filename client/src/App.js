@@ -3,7 +3,7 @@ import './App.css';
 import Calendar from './pages/Calendar';
 import Main from './pages/Main';
 import Attendance from "./pages/Attendance";
-import Travel from "./pages/Travel";
+import TravelCheck from "./pages/Travel";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/attendance" element={<Attendance />} />
-        <Route path="/travel" element={<Travel />} />
+        <Route path="/travel" element={<TravelCheck />} />
       </Routes>
     </BrowserRouter>
   );
