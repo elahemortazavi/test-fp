@@ -36,23 +36,72 @@ const Attendance = () => {
           <div className="input-container">
             <input type="text" id="name-input" placeholder="Name"></input>
           </div>
-          <div className="role-select">
+          <div className="input-container">
+            <input type="date" id="date-input" placeholder="Date"></input>
+          </div>
+
+          {/* <div className="role-select">
             <select className="select-container">
               <option>Role</option>
               <option value="volunteer">Volunteer</option>
               <option value="trainee">Trainee</option>
             </select>
-          </div>
-          <div className="attendence-select">
+          </div> */}
+          <div className="attendance-select">
             <select className="select-container" id="attendanceType">
               <option>Attendance</option>
               <option value="in-person">In-Person</option>
-              <option value="remote">Remote</option>
+              <option value="remote">Online</option>
             </select>
           </div>
         </form>
       </div>
-      <div className="bottom-container">
+      <div class="container">
+        <div class="section">
+          <h2>In-Person</h2>
+          <div class="columns">
+            <div class="column">
+              <h3>Volunteer</h3>
+              <ul class="list">
+                <li>Name 1</li>
+                <li>Name 2</li>
+                <li>Name 3</li>
+              </ul>
+            </div>
+            <div class="column">
+              <h3>Trainee</h3>
+              <ul class="list">
+                <li>Name 1</li>
+                <li>Name 2</li>
+                <li>Name 3</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <h2>Online</h2>
+          <div class="columns">
+            <div class="column">
+              <h3>Volunteer</h3>
+              <ul class="list">
+                <li>Name 1</li>
+                <li>Name 2</li>
+                <li>Name 3</li>
+              </ul>
+            </div>
+            <div class="column">
+              <h3>Trainee</h3>
+              <ul class="list">
+                <li>Name 1</li>
+                <li>Name 2</li>
+                <li>Name 3</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="bottom-container">
         <div>
           <table className="custom-table">
             <caption>Remote</caption>
@@ -89,7 +138,7 @@ const Attendance = () => {
             </tbody>
           </table>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

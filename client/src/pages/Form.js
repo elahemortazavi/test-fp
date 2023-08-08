@@ -1,44 +1,74 @@
 import React from "react";
 import "./form.css";
-import Logo1 from "./img/cyfLogo1.png"
+import Logo1 from "./img/cyfLogo1.png";
+
+import { Link } from "react-router-dom";
 
 function Form() {
   return (
-    <div className="login">
-      <span className="loginTitle">
-        <img className="logo1" src={Logo1} alt="logo" />
-      </span>
+    <>
+      <div className="navbar">
+        <ul className="navList">
+          <li className="navListItem">
+            <Link className="link" to="/">
+              MAIN
+            </Link>
+          </li>
+          <li className="navListItem">
+            <Link className="link" to="/calendar">
+              CYF CALENDAR
+            </Link>
+          </li>
+          <li className="navListItem">
+            <Link className="link" to="/attendance">
+              ATTENDANCE
+            </Link>
+          </li>
+          <li className="navListItem">
+            <Link className="link" to="/travel">
+              TRAVEL CHECK
+            </Link>
+          </li>
+        </ul>
+        <img className="logo-img" src={Logo1} alt="logo" />
+      </div>
 
-      <form className="loginForm">
-        <label>Email</label>
-        <input
-          className="loginInput"
-          type="text"
-          placeholder="Enter your email..."
-        />
+      <div className="login">
+        <span className="loginTitle">
+          <img className="logo1" src={Logo1} alt="logo" />
+        </span>
 
-        <label>Password</label>
-        <input
-          className="loginInput"
-          type="password"
-          placeholder="Enter your password..."
-        />
+        <form className="loginForm">
+          <label>Email</label>
+          <input
+            className="loginInput"
+            type="text"
+            placeholder="Enter your email..."
+          />
 
-        <label>City</label>
-        <select className="loginInput">
-          <option value="london">London</option>
-          <option value="manchester">Manchester</option>
-        </select>
+          <label>Password</label>
+          <input
+            className="loginInput"
+            type="password"
+            placeholder="Enter your password..."
+          />
 
-        <label>Role</label>
-        <select className="loginInput">
-          <option value="volunteer">Volunteer</option>
-          <option value="trainee">Trainee</option>
-        </select>
+          <label>City</label>
+          <select className="loginInput">
+            <option value="london">London</option>
+            <option value="manchester">Manchester</option>
+          </select>
 
-        <button className="loginButton">Login</button>
-      </form>
-    </div>
+          <label>Role</label>
+          <select className="loginInput">
+            <option value="volunteer">Volunteer</option>
+            <option value="trainee">Trainee</option>
+          </select>
+
+          <button className="loginButton">Login</button>
+        </form>
+      </div>
+    </>
   );
 }
 

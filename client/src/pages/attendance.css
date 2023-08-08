@@ -56,21 +56,21 @@
     align-items: center;
     justify-content: center;
     background-size: cover;
-    background-color: rgba(180, 175, 175, 0.483);
+    background-color: rgb(213, 212, 212);
     border-radius: 20px;
-    border: 1px solid rgb(244, 10, 10);
+    border: 1px solid brown;
     margin: 10px;
     
 }
 .middle-container {
 
     display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        flex: 1;
-}
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex: 1;
+    }
 
 
 .input-container {
@@ -79,7 +79,8 @@
     align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    border: rgb(232, 50, 10);
+    border: brown;
+    background-color: green;
 
 }
 /* Style for the input */
@@ -90,12 +91,12 @@ input {
     padding: 5px 10px;
     font-size: 18px;
     font-weight: bolder;
-    border: 1px solid rgb(225, 50, 11);
+    border: 1px solid brown;
     border-radius: 5px;
     outline: none;
-    border-color: #f42409;
-    box-shadow: 0 0 5px rgba(255, 13, 0, 0.931);
-    
+    border-color: brown;
+    box-shadow: 0 0 8px rgba(172, 170, 170, 0.931);
+    background-color:#fbf7f7;
 }
 td {
     padding: 8px;
@@ -112,7 +113,7 @@ color: brown;
 }
 th.border-right {
     border-right: 1px solid #ccc;
-    border-bottom: #f42409;
+    border-bottom: brown;
 }
 .select-container {
 display: flex;
@@ -122,20 +123,76 @@ justify-content: center;
 text-align: center;
 margin-top: 20px;
 margin-bottom: 20px;
-border: rgb(232, 50, 10);
+border: brown;
 width: 200px; 
 height: 45px;
 padding: 5px 10px;
 font-size: 18px;
 font-weight: 600;
-border: 1px solid rgb(225, 50, 11);
+border: 1px solid brown;
 border-radius: 5px;
 outline: none;
-border-color: #f42409;
-box-shadow: 0 0 5px rgba(255, 13, 0, 0.931);
+border-color: brown;
+box-shadow: 0 0 5px rgb(211, 210, 210);
     
 }
 
 .select-container option {
     text-align: justify;
+    
+}
+
+
+
+
+
+
+
+.container {
+  display: flex;
+  justify-content:space-around;
+  align-items: flex-start;
+  padding: 20px;
+  height: 60vh;
+}
+
+.section {
+  border: 3px solid brown;
+  padding: 20px;
+  margin: 10px;
+  flex: 1;
+  justify-content:center;
+  text-align: center;
+}
+
+.columns {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  border: 1px solid brown;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fbf7f7;
+  height: 40vh;
+}
+
+h2, h3 {
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px dotted brown; /* Add a border line under headers */
+  padding-bottom: 5px; /* Add some spacing between the text and the border line */
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list li {
+  margin-bottom: 5px;
+}
+.select-container {
+    background-color: #fbf7f7;
 }
