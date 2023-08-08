@@ -15,6 +15,7 @@
     padding: 0;
     list-style: none;
     margin-left: 40px;
+    
 
 }
 
@@ -35,6 +36,7 @@
   text-decoration: none; /* Remove underlines from links */
 }
 
+
 .logo-img {
     max-width: 100px;
     margin-right: 40px;
@@ -42,29 +44,7 @@
     /* width: 150px;
   height: 150px; */
 }
-/* .bottom-container {
-    display: flex;
-    justify-content: center;
-    padding: 100px;
-} */
-/* .custom-table {
-    width: 300px;
-    height: 300px;
-    padding:10px;
-    gap:10px;
 
-    border-bottom: 1px solid #ccc;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-color: rgb(213, 212, 212);
-    border-radius: 20px;
-    border: 1px solid brown;
-    margin: 10px;
-    
-} */
 .middle-container {
     display: flex;
     flex-direction: row;
@@ -100,23 +80,7 @@ input {
     box-shadow: 0 0 8px rgba(172, 170, 170, 0.931);
     background-color:#fbf7f7;
 }
-/* td {
-    padding: 8px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 600;
-} */
-/* th {
-color: brown;
-    font-size: 18px;
-    font-weight: 600;
-    padding: 10px;
-    } */
 
-/* th.border-right {
-    border-right: 1px solid #ccc;
-    border-bottom: brown;
-} */
 
 .select-container {
 display: flex;
@@ -139,12 +103,6 @@ border-color: brown;
 box-shadow: 0 0 5px rgb(211, 210, 210);
     
 }
-
-/* .select-container option {
-    text-align: justify;
-    
-} */
-
 
 
 

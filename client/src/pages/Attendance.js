@@ -36,7 +36,7 @@ const Attendance = () => {
           <div className="input-container">
             <input type="text" id="name-input" placeholder="Name"></input>
           </div>
-          
+
           <div className="role-select">
             <select className="select-container">
               <option>Role</option>
@@ -102,45 +102,7 @@ const Attendance = () => {
           </div>
         </div>
       </div>
-
-      {/* <div className="bottom-container">
-        <div>
-          <table className="custom-table">
-            <caption>Remote</caption>
-            <thead>
-              <tr>
-                <th className="border-right">Volunteers</th>
-                <th>Trainee</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div>
-          <table className="custom-table">
-            <caption>In-person</caption>
-            <thead>
-              <tr>
-                <th className="border-right">Volunteers</th>
-                <th>Trainee</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div> */}
+      
     </div>
   );
 };
