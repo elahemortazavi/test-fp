@@ -24,12 +24,15 @@
     font-weight: 600;
     cursor: pointer;
     padding: 20px;
-
-}
+    }
 
 .navListItem:hover {
     color: brown;
 
+}
+.navListItem a {
+  color: black;
+  text-decoration: none; /* Remove underlines from links */
 }
 
 .logo-img {
@@ -39,12 +42,12 @@
     /* width: 150px;
   height: 150px; */
 }
-.bottom-container {
+/* .bottom-container {
     display: flex;
     justify-content: center;
     padding: 100px;
-}
-.custom-table {
+} */
+/* .custom-table {
     width: 300px;
     height: 300px;
     padding:10px;
@@ -61,9 +64,8 @@
     border: 1px solid brown;
     margin: 10px;
     
-}
+} */
 .middle-container {
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -73,7 +75,7 @@
     }
 
 
-.input-container {
+/* .input-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,7 +84,7 @@
     border: brown;
     background-color: green;
 
-}
+} */
 /* Style for the input */
 input {
     width: 200px;
@@ -98,23 +100,24 @@ input {
     box-shadow: 0 0 8px rgba(172, 170, 170, 0.931);
     background-color:#fbf7f7;
 }
-td {
+/* td {
     padding: 8px;
     text-align: center;
     font-size: 18px;
     font-weight: 600;
-}
-th {
+} */
+/* th {
 color: brown;
     font-size: 18px;
     font-weight: 600;
     padding: 10px;
-    
-}
-th.border-right {
+    } */
+
+/* th.border-right {
     border-right: 1px solid #ccc;
     border-bottom: brown;
-}
+} */
+
 .select-container {
 display: flex;
 flex-direction: column-reverse;
@@ -137,10 +140,10 @@ box-shadow: 0 0 5px rgb(211, 210, 210);
     
 }
 
-.select-container option {
+/* .select-container option {
     text-align: justify;
     
-}
+} */
 
 
 
@@ -178,9 +181,11 @@ box-shadow: 0 0 5px rgb(211, 210, 210);
   height: 40vh;
 }
 
+
 h2, h3 {
   margin: 0;
   padding: 0;
+  color: brown;
   border-bottom: 2px dotted brown; /* Add a border line under headers */
   padding-bottom: 5px; /* Add some spacing between the text and the border line */
 }
@@ -188,9 +193,11 @@ h2, h3 {
 .list {
   list-style: none;
   padding: 0;
+  
 }
 
 .list li {
+  margin-top: 10px;
   margin-bottom: 5px;
 }
 .select-container {

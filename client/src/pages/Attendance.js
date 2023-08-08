@@ -36,17 +36,19 @@ const Attendance = () => {
           <div className="input-container">
             <input type="text" id="name-input" placeholder="Name"></input>
           </div>
-          <div className="input-container">
-            <input type="date" id="date-input" placeholder="Date"></input>
-          </div>
-
-          {/* <div className="role-select">
+          
+          <div className="role-select">
             <select className="select-container">
               <option>Role</option>
               <option value="volunteer">Volunteer</option>
               <option value="trainee">Trainee</option>
             </select>
-          </div> */}
+          </div>
+
+          <div className="input-container">
+            <input type="date" id="date-input" placeholder="Date"></input>
+          </div>
+
           <div className="attendance-select">
             <select className="select-container" id="attendanceType">
               <option>Attendance</option>
