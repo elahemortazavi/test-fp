@@ -169,6 +169,16 @@ const Attendance = () => {
       console.error("Error fetching attendance data:", error);
     }
   };
+  
+
+  const updateDisplayedData = async () => {
+    try {
+      // Fetch updated attendance data and set the state variables
+      await fetchAttendanceData();
+    } catch (error) {
+      console.error("Error updating displayed data:", error);
+    }
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -188,8 +198,8 @@ const Attendance = () => {
       });
 
       if (response.ok) {
-        // Refresh or update the displayed data after successful submission
-        // You might want to call a function to update the displayed attendance data here
+        // Refresh or update the displayed data after successful submission:
+        await updateDisplayedData();
       }
     } catch (error) {
       console.error("Error submitting attendance:", error);
@@ -226,7 +236,7 @@ const Attendance = () => {
         </ul>
         <img className="logo-img" src={Logo} alt="logo" />
       </div>
-      
+
       <div className="middle-container">
         <form className="middle-container" onSubmit={handleSubmit}>
           <div className="input-container">
