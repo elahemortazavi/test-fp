@@ -37,12 +37,9 @@ const Attendance = () => {
             <input type="text" id="name-input" placeholder="Name"></input>
           </div>
 
-          <div className="role-select">
-            <select className="select-container">
-              <option>Role</option>
-              <option value="volunteer">Volunteer</option>
-              <option value="trainee">Trainee</option>
-            </select>
+
+          <div className="input-container">
+            <input type="text" id="role-input" placeholder="Role"></input>
           </div>
 
           <div className="input-container">
@@ -54,8 +51,12 @@ const Attendance = () => {
               <option>Attendance</option>
               <option value="in-person">In-Person</option>
               <option value="remote">Online</option>
+              <option value="not-attend">Not-Attend</option>
             </select>
           </div>
+          <button type="submit" className="submit-btn">
+            Submit
+          </button>
         </form>
       </div>
       <div class="container">
@@ -102,8 +103,26 @@ const Attendance = () => {
           </div>
         </div>
       </div>
-      
     </div>
   );
 };
 export default Attendance;
+
+
+
+
+
+import React from "react";
+import { Link } from "react-router-dom";
+import "./attendance.css";
+import Logo from "./img/cyfLogo1.png";
+
+const Attendance = () => {
+  const [userData, setUserData] = useState({ name: "", role: "" });
+  const [date, setDate] = useState("");
+  const [attendanceType, setAttendanceType] = useState("Attendance");
+  const [inPersonVolunteers, setInPersonVolunteers] = useState([]);
+  const [inPersonTrainees, setInPersonTrainees] = useState([]);
+  const [onlineVolunteers, setOnlineVolunteers] = useState([]);
+  const [onlineTrainees, setOnlineTrainees] = useState([]);
+}

@@ -40,10 +40,17 @@ const Main = () => {
         </div>
         <div className="down">
           <div className="downLeft">
-            <i className="topIcon fab fa-facebook-square"></i>
-            <i className="topIcon fab fa-instagram-square"></i>
-            <i className="topIcon fab fa-pinterest-square"></i>
-            <i className="topIcon fab fa-twitter-square"></i>
+            <a href="https://www.facebook.com/codeyourfuture.io/?locale=en_GB">
+              <i className="topIcon fab fa-facebook-square"></i>
+            </a>
+
+            <a href="https://www.instagram.com/codeyourfuture_/channel/">
+              <i className="topIcon fab fa-instagram-square"></i>
+            </a>
+
+            <a href="https://twitter.com/codeyourfuture?lang=en">
+              <i className="topIcon fab fa-twitter-square"></i>
+            </a>
           </div>
           <img className="logo-img" src={Logo} alt="logo" />
         </div>

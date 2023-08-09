@@ -80,7 +80,21 @@ input {
     box-shadow: 0 0 8px rgba(172, 170, 170, 0.931);
     background-color:#fbf7f7;
 }
-
+.submit-btn {
+    width: 200px;
+    text-align: center;
+    color: brown;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: bolder;
+    border: 1px solid brown;
+    border-radius: 5px;
+    outline: none;
+    border-color: brown;
+    box-shadow: 0 0 8px rgba(172, 170, 170, 0.931);
+    background-color:#fbf7f7;
+}
 
 .select-container {
 display: flex;
