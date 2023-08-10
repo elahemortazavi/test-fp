@@ -242,7 +242,13 @@ const Attendance = () => {
       <div className="middle-container">
         <form className="middle-container" onSubmit={handleSubmit}>
           <div className="input-container">
-            <input type="text" id="name-input" placeholder="Name"></input>
+            <input
+              type="text"
+              id="name-input"
+              placeholder="Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
           </div>
 
           <div className="input-container">
