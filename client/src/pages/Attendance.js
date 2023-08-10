@@ -252,7 +252,13 @@ const Attendance = () => {
           </div>
 
           <div className="input-container">
-            <input type="text" id="role-input" placeholder="Role"></input>
+            <input
+              type="text"
+              id="role-input"
+              placeholder="Role"
+              value={role}
+              onChange={(e) => setRole(e.target.value)}
+            />
           </div>
 
           <div className="input-container">
