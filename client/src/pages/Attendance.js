@@ -118,6 +118,8 @@ import "./attendance.css";
 import Logo from "./img/cyfLogo1.png";
 
 const Attendance = () => {
+  const [name, setName] = useState("");
+  const [role, setRole] = useState("");
   const [userData, setUserData] = useState({ name: "", role: "" });
   const [date, setDate] = useState("");
   const [attendanceType, setAttendanceType] = useState("Attendance");
