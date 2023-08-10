@@ -246,7 +246,7 @@ const Attendance = () => {
               type="text"
               id="name-input"
               placeholder="Name"
-              value={name}
+              value={userData.name}
               onChange={(e) => setName(e.target.value)}
             />
           </div>
@@ -256,7 +256,7 @@ const Attendance = () => {
               type="text"
               id="role-input"
               placeholder="Role"
-              value={role}
+              value={userData.role}
               onChange={(e) => setRole(e.target.value)}
             />
           </div>
