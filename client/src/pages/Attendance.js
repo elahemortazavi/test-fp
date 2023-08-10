@@ -186,7 +186,7 @@ const Attendance = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("/submit-attendance", {
+      const response = await fetch("/http://localhost:5000/submit-attendance", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
