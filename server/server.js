@@ -220,3 +220,40 @@ function getUserIdFromRequest(req) {
     return req.user.id;
 }
 };
+
+
+
+
+
+////////////////////////////////
+//******Attendance page******//
+///////////////////////////////
+
+// router.get("/fetch-attendance-data", async (_, res) => {
+// 	try {
+// 		const attendanceData = await pool.query("SELECT * FROM Attendance; ");
+// 		res.json(attendanceData.rows);
+// 	} catch (error) {
+// 		console.error("Error fetching attendance data:", error);
+// 		res.status(500).json({ error: "Internal server error" });
+// 	}
+// });
+
+
+// // Submit attendance data
+// router.post("/submit-attendance", async (req, res) => {
+//   const { userID ,name, role, date, attendanceType } = req.body;
+
+//   try {
+
+//     const newAttendance = await pool.query(
+//       "INSERT INTO Attendance (userid, name, role, date, attendance_type) VALUES ($1, $2, $3, $4, $5) RETURNING *",
+//       [userID, name, role, date, attendanceType]
+//     );
+
+//     res.status(201).json(newAttendance.rows[0]);
+//   } catch (error) {
+//     console.error("Error submitting attendance:", error);
+//     res.status(500).json({ error: "Internal server error" });
+//   }
+// });
