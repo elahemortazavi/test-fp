@@ -71,8 +71,9 @@ function Breakout() {
             }
           }
           if (
-            roomAttendees.filter((attendee) => attendee.role === "trainee")
-              .length >= 3
+            roomAttendees.filter((attendee) =>
+              attendee.role.includes("trainee")
+            ).length >= 3
           ) {
             newBreakoutRooms.push({
               roomType: "In-Person",
@@ -83,14 +84,16 @@ function Breakout() {
             for (const room of newBreakoutRooms) {
               if (
                 room.roomType === "In-Person" &&
-                room.attendees.filter((attendee) => attendee.role === "trainee")
-                  .length < 5
+                room.attendees.filter((attendee) =>
+                  attendee.role.includes("trainee")
+                ).length < 5
               ) {
                 room.attendees.push(
-                  ...roomAttendees.filter(
-                    (attendee) => attendee.role === "trainee"
+                  ...roomAttendees.filter((attendee) =>
+                    attendee.role.includes("trainee")
                   )
                 );
+
                 break;
               }
             }
@@ -114,8 +117,9 @@ function Breakout() {
               }
             }
             if (
-              roomAttendees.filter((attendee) => attendee.role === "trainee")
-                .length >= 3
+              roomAttendees.filter((attendee) =>
+                attendee.role.include("trainee")
+              ).length >= 3
             ) {
               newBreakoutRooms.push({
                 roomType: "Online",
@@ -126,13 +130,13 @@ function Breakout() {
               for (const room of newBreakoutRooms) {
                 if (
                   room.roomType === "Online" &&
-                  room.attendees.filter(
-                    (attendee) => attendee.role === "trainee"
+                  room.attendees.filter((attendee) =>
+                    attendee.role.includes("trainee")
                   ).length < 5
                 ) {
                   room.attendees.push(
-                    ...roomAttendees.filter(
-                      (attendee) => attendee.role === "trainee"
+                    ...roomAttendees.filter((attendee) =>
+                      attendee.role.includes("trainee")
                     )
                   );
                   break;
