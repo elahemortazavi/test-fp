@@ -176,3 +176,55 @@ h2, h3 {
 .select-container {
     background-color: #fbf7f7;
 }
+
+/* Small screens */
+@media (max-width: 576px) {
+  
+}
+
+/* Medium screens */
+@media (max-width: 768px) {
+ .middle-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  }
+  #input1 {
+    /* margin-top: 10px; */
+    width: auto;
+  }
+  .section {
+    border:none;
+    width: 100%;
+  }
+  .submit-container{
+    margin-top: 10px; 
+  }
+  
+  .container1 {
+    width: 100%;
+  }
+
+  .attendees-by-date-container {
+    /* Container for the boxes that appear when pressing the button */
+  display: none; /* Initially hide the container */
+  max-height: 50vh; /* Set a maximum height for the container */
+  overflow-y: auto;
+  max-width: 100%; /* Ensure the container doesn't exceed viewport width */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  padding: 0;
+  margin: 0;
+  }
+
+  /* When the button is clicked, display the container */
+  .show-attendees .attendees-by-date-container {
+    display: block;
+  }
+}
+
+/* Large screens */
+@media (max-width: 992px) {
+  
+} 
